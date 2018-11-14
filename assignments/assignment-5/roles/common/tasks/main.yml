@@ -7,3 +7,9 @@
 
 - debug:
     msg: "Ansible invoked inside {{ builder }}."
+    
+- name: Install the package "choco"
+  yum:
+    name: htop
+    state: present
+  become: true
